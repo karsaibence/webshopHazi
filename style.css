@@ -1,0 +1,45 @@
+h1 {
+	text-align: center;
+}
+.card-footer {
+	display: flex;
+	flex-direction: row;
+}
+.card-footer button {
+	width: 100px;
+	height: 30px;
+	align-items: left;
+}
+.card-footer h5 {
+	text-align: right;
+	align-items: right;
+}
+.card-footer {
+	width: 100%;
+	height: 100%;
+}
+img {
+	width: 200px;
+	height: 200px;
+	border-bottom: 2px solid grey;
+}
+main {
+	padding: 2rem;
+}
+.kartyak {
+	align-items: center;
+	max-width: 70%;
+	margin-inline: auto;
+	margin-block: 2rem;
+}
+.card {
+	max-width: 250px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+ul {
+	margin-inline: auto;
+	align-items: center;
+}
+li {
+	padding-inline: 4rem;
+}
