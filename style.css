@@ -43,3 +43,19 @@ ul {
 li {
 	padding-inline: 4rem;
 }
+table tr td {
+	width: 400px;
+}
+table th {
+	width: 200px;
+}
+table {
+	margin-top: 2rem;
+	max-width: 1500px;
+	margin-inline: auto;
+}
+.sum-price{
+	max-width: 1500px;
+	margin-inline: auto;
+	text-align: right;
+}

@@ -5,6 +5,8 @@ export default class Card {
 		this.#item = item
 		this.#itemElement = itemElement
 		this.#createCard()
+		this.selected = $(".kivalaszt:last")
+		this.#clickEvent()
 	}
 	#createCard() {
 		this.#itemElement.append(
@@ -16,7 +18,7 @@ export default class Card {
                             <h5 class="card-title">${this.#item.name}</h5>
                             <p class="card-text">${this.#item.leiras}</p>
                             <div class="card-footer">
-                                <button class="btn btn-primary btn-sm">Vásárlás</button>
+                                <button class="btn kivalaszt btn-primary btn-sm">Vásárlás</button>
                                 <h6>Ár: <b>${this.#item.price}</b>Ft</h6>
                             </div>
                         </div>
@@ -24,5 +26,11 @@ export default class Card {
                 </div>
             `
 		)
+	}
+	#clickEvent() {
+		this.selected.on("click", (event) => {
+			const e = new CustomEvent("kivalaszt", {detail: this.#item})
+			window.dispatchEvent(e)
+		})
 	}
 }

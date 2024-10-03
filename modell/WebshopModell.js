@@ -1,3 +1,15 @@
 export default class WebshopModell {
-	constructor() {}
+	#termekList = []
+
+	constructor(list) {
+		this.#termekList = list
+	}
+
+	getTermekList() {
+		const lista = this.#termekList
+		return lista
+	}
+	addTermek(item) {
+		this.#termekList.push(item)
+	}
 }
